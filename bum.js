@@ -1,6 +1,9 @@
-let http = require('http');
+let fs = require('fs');
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Welcome ');
-}).listen(8080);
+fs.open("message.txt", "w", function (error, fd) {
+    if (error) {
+        console.log('Error while opening');
+}else {
+    console.log("New FIle createdd");
+}
+});
