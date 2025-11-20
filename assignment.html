@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Login page</title>
+    <style>
+        body {
+            background: url('logo.png') center center no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 6px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #0d0d0d;
+            color: white;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #7d93ec;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="username" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
